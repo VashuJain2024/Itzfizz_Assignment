@@ -1,6 +1,7 @@
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { useLayoutEffect, useRef } from "react";
+import carImage from "../assets/car.webp";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -71,7 +72,7 @@ export default function CarScroll() {
                     className="absolute top-[25px] left-[40px] z-20"
                 >
                     <img
-                        src="/src/assets/car.webp"
+                        src={carImage}
                         alt="car"
                         className="h-[150px] w-[350px] object-contain scale-y-[1.3] scale-x-[1.4]"
                     />
